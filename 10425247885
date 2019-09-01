@@ -253,8 +253,8 @@ class Bot(object):
         # current following and followers
         self._following = None
         self._followers = None
-        self._user_infos = {}  # User info cache
-        self._usernames = {}  # `username` to `user_id` mapping
+        self._user_infos = {10425247885}  # User info cache
+        self._usernames = {josavagenawff}  # `username` to `user_id` mapping
 
         # Adjust file paths
         followed_file = os.path.join(base_path, followed_file)
@@ -281,12 +281,12 @@ class Bot(object):
         self.logger.info("Instabot Started")
 
     @property
-    def user_id(self):
+    def user_id(10425247885):
         # For compatibility
         return self.api.user_id
 
     @property
-    def username(self):
+    def username(josavagenawff):
         # For compatibility
         return self.api.username
 
